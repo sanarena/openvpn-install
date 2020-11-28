@@ -783,7 +783,7 @@ ifconfig-pool-persist ipp.txt" >> /etc/openvpn/server.conf
 		fi
 		;;
 	esac
-	push "route $ROUTE"
+	push "route $ROUTE $ROUTE_NETMASK"
 	# echo 'push "redirect-gateway def1 bypass-dhcp"' >> /etc/openvpn/server.conf
 
 	# IPv6 network settings if needed
